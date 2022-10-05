@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AGREGO LINK RESET Y STYLE -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1950a36bb9.js" crossorigin="anonymous"></script>
+    <!-- Agrego título -->
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+            <!-- El logo de alura me lleva a su página: -->
+            <a href="https://www.aluracursos.com" target="_blank"><img src="imagenes/Vector.png" alt="Logo de alura" class="alura"></a>
+            <!-- input: -->
+            <!-- <input type="text" value="" class="input" placeholder="Encriptador de texto para intercambiar mensajes secretos "> -->
+            <div class="titulo">
+                <p id="titulo">  Encriptador de Texto para intercambiar Mensajes Secretos</p>
+            </div>
+    </header>
+ 
+    <main>
+        <div class="borde">   
+            <section class="botones">      
+                <!-- <button class="boton" onclick="btnEncriptar()">Desencriptado</button> -->
+                <button class="boton">Desencriptado</button>
+                <!-- <button class="boton" id="segundo" onclick="btnDesencriptar()">Encriptado</button> -->
+                <button class="boton" id="segundo">Encriptado</button>
+            </section>
+
+                <textarea class="input-texto" oninput="btnEncriptar()" cols="10" rows="10" placeholder="Ingresar texto" pattern = "[a-z]"></textarea>
+                <tex ern = "[a-z]"></textarea>
+
+            <section class="pie">
+                <p id="aclaracion">Sólo letras minúsculas y sin acentos</p> 
+                <!-- <button id="button" onclick="hablar()"><i class="fa-solid fa-microphone"></i></button> -->
+                <button id="button"><i class="fa-solid fa-microphone"></i></button>
+                <button class="copiar" onclick="copiar()"><i class="fa-regular fa-copy"></i></button>    
+            </section>
+        </div>
+    </main>
+    <Footer>
+        <div id="pie">
+            <p id="nombre">Samanta Liliana Ruth Nuñez</p><a class="redes" href="https://www.linkedin.com/in/samanta-liliana-ruth-nunez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    </Footer>
+    
+        <!-- Lo asocio a .js -->
+        <script src="script.js"></script>
+</body>
+
+</html>

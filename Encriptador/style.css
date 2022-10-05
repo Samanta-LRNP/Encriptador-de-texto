@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "avocado";
+    src: url('Avocado\ Cake\ Demo.otf');
+}
+
+@font-face {
+    font-family: "creepy";
+    src: url('CreepyPumkin.otf');
+}
+
+html {
+    /* corresponde a 10px */
+    font-size: 62.5%;
+}
+
+header {
+    /* width: 250rem; */
+    margin: 3rem 5rem;
+}
+
+.alura:hover {
+    border-color: aliceblue;
+    font-size: 0.9rem;
+    transform: scale(1.2) rotate(15deg);; 
+}
+
+.titulo {
+    /* ubicación: */
+    display: inline-block; 
+    /* position: relative; --> viene por defecto
+    en relación a su posición actual*/ 
+    margin: 0 2rem; 
+    /* Defino tamaño del input */
+    width: 40rem;
+    height: 3rem;  
+    padding: 0.5rem 1.5rem;
+    /* defino letra: */
+    font-family: "avocado";
+    font-size: 1.3rem;
+    /* Defino borde */
+    border-radius: 1.5rem;
+    border: 0.3rem solid #d3d6e4;
+    /*Defino sombra:*/
+    box-shadow: 0.5rem 1rem 0.3rem rgba(0 0 0 / 0.15);
+}
+
+.titulo:hover {
+    border-color: aliceblue;
+    font-size: 1.3rem;
+    transform: scale(1.09);
+    /* font-weight: bold; */
+    /* text-shadow: 2px 2px 20px black; */
+}
+
+#titulo {
+    margin: 1rem;
+}
+
+.borde {
+    display: inline-block; 
+    width: 50rem;
+    height: 32rem;
+    margin-left: 5rem; 
+    /* Lo determino con un borde: */
+    box-sizing: border-box; 
+    border: 0.3rem solid #d3d6e4;
+    border-radius: 7px;
+    /* Le doy una sombra: */
+    box-shadow: -0.5rem 0.1rem 0.3rem rgba(0 0 0 / 0.15);
+}
+
+.borde:hover {
+    border-color: rgb(4, 4, 124);
+}
+
+
+.botones {
+    display: inline-block;
+    font-weight: 500px;
+    /* margen entre botones y .borde superior (cuadrado) y borde izquierdo*/
+    margin: 10px 40px 3px;   
+}
+
+.boton {
+    /* color: #1a0dab; */
+    /* distanciamiento interno (de letras con borde del botón):
+    top - right - bottom - left:*/
+    padding: 1rem 5rem;
+    font-family: "avocado";
+    font-size: 1.4rem;
+    /* Defino borde: */
+    border: 0.1rem solid #dadce0;
+    border-radius: 1rem;  
+    box-shadow: 0.3rem 0.5rem 0.3rem rgba(0 0 0 / 0.15);
+    background-color: aliceblue;
+}
+
+.boton:hover {  
+    border-color: black;
+}
+
+#segundo {
+    margin-left: 3.8rem;
+} 
+
+.input-texto {
+    /* display: inline-block;  */
+    /* margin-top: 1rem; */
+    font-size: 2.2rem; 
+    font-family: Arial, Helvetica, sans-serif;  
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.8rem;
+    border: none; 
+    margin: 1.4rem 2rem 0.8rem 4rem;
+    text-decoration: none;
+}
+
+.input-texto:focus {
+    outline: none;
+} 
+
+#mensaje {
+    /* display: inline-block;  */
+    /* margin-top: 15px; */
+    font-size: 2.3rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20rem;
+    height: 20rem;
+    /* margin-left: 20px; */
+    background-color: #F8F9FA;
+    border-radius: 0.8rem;
+    border: none;
+    margin-left:0.1rem;
+    text-decoration: none;
+} 
+
+#mensaje:focus {
+    outline: none;
+}
+
+.muñeco {
+    width: 9rem;
+    height: 9rem;
+    /* padding: 120px 700px; */
+    position: absolute;
+    /* margin-top: 1rem; */
+    /* margin-left: 100px; */
+}
+
+#aclaracion {
+    display: inline-block; 
+    font-size: 1.2rem;
+    margin-left: 5rem;
+    font-style: italic;
+}
+
+#button {
+    display: inline-block;
+    position: relative;
+    left: 17rem;
+    cursor: pointer;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.copiar {
+    position: relative;
+    left: 17.5rem;  
+    cursor: pointer;
+    margin-right: 0;
+    padding: 0.5rem 0.5rem; 
+    /* Defino borde: */
+    border: 0.1rem solid black;
+    border-radius: 2px;  
+    box-shadow: 0.3rem 0.5rem 0.3rem rgba(0 0 0 / 0.15);
+}
+
+.copiar:hover {
+    transform: scale(1);  
+    font-size: 0.5rem;  
+    border-color: black;
+}
+
+
+.input-texto::placeholder {
+    height: 18rem;
+    font-size: 2.1rem;
+    padding: 0.5rem 0.5rem;  
+  } 
+
+#mensaje::placeholder {
+    height: 18rem;
+    padding: 0.5rem 0.5rem;  
+    font-size: 2.1rem;
+    /* pongo la imágen dentro del imput, por eso abro un pseudoclase */
+    background-image: url("imagenes/Muñeco.png");
+    background-size: 18rem; 
+    background-repeat: no-repeat;
+    background-position: center 4rem; /*o right center (ubicación) */
+}
+
+#nombre {
+    display: inline-block;
+    position: relative;
+    margin-left: 20rem;
+    margin-top: 1rem;
+    font-family: "creepy";
+    font-size: 1.5rem;
+}
+
+.redes {
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+}
+
+@media screen and (max-width:700px) {
+
+    header {
+        margin: 3rem 3rem;
+    }
+
+    .alura {
+        display: block; 
+        position: relative;
+        left: 20rem ;
+    }
+
+    .titulo {
+        display: block; 
+        margin: 1rem 0rem; 
+        height: 4rem;  
+        width: 40rem;
+        padding: auto 1.5rem;
+    }
+
+    .borde {
+        width: 46rem;
+        height: 32rem;
+        margin-left: 2rem; 
+    }
+
+    .botones {
+        margin: 10px 20px 3px;   
+    }
+
+    .boton {
+        margin-left: 0rem;
+    }
+
+    .input-texto {
+        width: 40rem; 
+        height: 10rem;
+        margin-left:3rem;
+    }
+
+    #mensaje {
+        width: 40rem; 
+        height: 10rem;
+        margin-left:3rem;
+    }  
+
+    #mensaje::placeholder {
+        background-size: 10rem; 
+        background-position: 19rem 1rem; /*o right center (ubicación) */
+        
+    }
+
+    #nombre {
+        position: relative;
+        margin-left: 13rem;
+    }
+    
+}
+
+
+
+
+
